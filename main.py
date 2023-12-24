@@ -15,8 +15,8 @@ from lib import lobby, farm, stage, reward
 #from lib import farm, lobby, reward, stage
 
 # auto_setup(__file__)
-# logger = logging.getLogger("airtest")
-# logger.setLevel(logging.ERROR)
+logger = logging.getLogger("airtest")
+logger.setLevel(logging.ERROR)
 # logging.basicConfig(level=logging.warn)
 
 go_lobby = lobby.GoInLobby()
@@ -24,9 +24,8 @@ go_farm = farm.CollectFarm()
 go_reward = reward.GetReward()
 go_stage = stage.ResourceStage()
 
-# go_lobby.run()
-# go_farm.run()
-# go_stage.will_analysis()
-# go_stage.experience_stage()
-# go_reward.run_all()
-go_reward.monthly()
+go_lobby.run()
+go_farm.run()
+go_stage.will_analysis()
+go_stage.experience_stage()
+go_reward.run_all()

@@ -36,12 +36,13 @@ class GoInLobby():
         touch(pos)
 
         # 剩下是新的一天的判斷式
+        sleep(20)
         if exists(Template(r"picture\lobby\lobby_prelobby.png", record_pos=(-0.465, -0.243), resolution=(1920, 1080))):
             touch(Template(r"picture\lobby\lobby_prelobby.png", record_pos=(-0.465, -0.243), resolution=(1920, 1080)))
-            #點一下中間下面
-            touch((930,930))
-            #點一下中間左邊
-            touch((380,520))
+        #點一下中間下面
+        touch((930,930))
+        #點一下中間左邊
+        touch((380,520))
 
 
 

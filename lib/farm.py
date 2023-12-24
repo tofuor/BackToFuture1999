@@ -30,4 +30,4 @@ class CollectFarm():
         touch(Template(r"picture\farm\farm_personal_trustworthy.png", record_pos=(-0.453, -0.127), resolution=(1920, 1080)))
         sleep(5)
         pos = wait(Template(r"picture\farm\farm_back.png", record_pos=(-0.466, -0.244), resolution=(1920, 1080)), timeout=40, interval=10, intervalfunc=self.notfound)
-        touch(pos, duration=2, times=2)
+        touch(pos, duration=2, times=3)
