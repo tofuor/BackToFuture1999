@@ -57,8 +57,6 @@ class Others():
         repeat_time = int(number) // stage_consume
         self.switch(repeat_time)
 
-    
-
     def switch(self, input_value):
         '''
             選擇一次打幾次關卡
@@ -79,7 +77,6 @@ class ResourceStage():
             1. 意志解析 will_analysis()
             2. 塵埃運動 experience_stage()
             3. 鑄幣美學 money_stage()
-            4.
     '''
     def __init__(self):
         self.support_func = Others()

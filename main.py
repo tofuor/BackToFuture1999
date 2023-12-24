@@ -12,12 +12,11 @@ current_path = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(current_path)
 
 from lib import lobby, farm, stage, reward
-#from lib import farm, lobby, reward, stage
 
 # auto_setup(__file__)
 logger = logging.getLogger("airtest")
 logger.setLevel(logging.ERROR)
-# logging.basicConfig(level=logging.warn)
+# logging.basicConfig(level=logging.DEBUG)
 
 go_lobby = lobby.GoInLobby()
 go_farm = farm.CollectFarm()
