@@ -15,9 +15,9 @@ pip install -r requirements.txt
 ### 執行腳本
 1. 確認adb連接
 ```
-    adb kill-server 
-    adb start-server
-    adb device
+adb kill-server 
+adb start-server
+adb device
 ```
 2. 連接伺服器並執行腳本
 ```
