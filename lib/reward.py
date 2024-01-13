@@ -19,7 +19,7 @@ class GetReward():
         touch(Template(r"picture\reward\reward_daily_task_logo.png", record_pos=(-0.439, -0.069), resolution=(1920, 1080)))
         sleep(3)
         touch(Template(r"picture\reward\reward_get_all.png", record_pos=(0.415, -0.16), resolution=(1920, 1080)))
-        sleep(2)
+        sleep(4)
         #點一下中間下面
         touch((930,930))
         sleep(2)
@@ -59,8 +59,8 @@ class GetReward():
             一次跑全部獎勵
         '''
         self.daily_task()
-        self.monthly()
-        self.spec_reward()
+        # self.monthly()
+        # self.spec_reward()
         
 
 

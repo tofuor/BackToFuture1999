@@ -26,7 +26,7 @@ class GoInLobby():
         '''
         lobby_logger.debug("infra_logo")
         touch(Template(r"picture\lobby\lobby_1999_logo.png", record_pos=(0.082, -0.097), resolution=(1920, 1080)))
-      
+        sleep(10)
         # 公告
         if exists(Template(r"picture\lobby\lobby_announcement.png", record_pos=(0.419, -0.197), resolution=(1920, 1080))):
             touch(Template(r"picture\lobby\lobby_announcement.png", record_pos=(0.419, -0.197), resolution=(1920, 1080)))
@@ -39,10 +39,13 @@ class GoInLobby():
         sleep(20)
         if exists(Template(r"picture\lobby\lobby_prelobby.png", record_pos=(-0.465, -0.243), resolution=(1920, 1080))):
             touch(Template(r"picture\lobby\lobby_prelobby.png", record_pos=(-0.465, -0.243), resolution=(1920, 1080)))
+            sleep(3)
         #點一下中間下面
         touch((930,930))
+        sleep(3)
         #點一下中間左邊
         touch((380,520))
+        sleep(3)
 
 
 
